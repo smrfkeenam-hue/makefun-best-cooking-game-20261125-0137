@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Ember Kitchen — a fast little cooking game: take orders, cook, build, serve.">
+<title>Ember Kitchen — a fast little cooking game</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body { margin: 0; padding: 0; background: #2b1d16; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #wrap { position: relative; }
+  canvas { display: block; background: #f6e7c8; border-radius: 10px;
+    box-shadow: 0 12px 48px rgba(0,0,0,.55); cursor: pointer;
+    touch-action: none; user-select: none; -webkit-user-select: none; }
+  #hint { position: absolute; left: 0; right: 0; bottom: -26px; text-align: center;
+    color: #d8c3a5; font: 13px/1.4 system-ui, sans-serif; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="hint">Click ingredient bins (or keys 1–0) to pick up, click the stove to cook, click the plate to build, SPACE to serve.</div>
+</div>
+<script src="src/config.js"></script>
+<script src="src/recipes.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/input.js"></script>
+<script src="src/world.js"></script>
+<script src="src/render.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
